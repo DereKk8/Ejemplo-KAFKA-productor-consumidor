@@ -45,3 +45,13 @@
     ```sh
     bin/kafka-console-consumer.sh --topic weather_data_demo --from-beginning --bootstrap-server localhost:9092
     ```
+
+- Lista los 'consumer-groups' de todos los topicos
+    ```sh
+    bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list test-consumer-group
+    ```
+
+- Checkear los miembros de un 'consumer-group' specifico
+    ```sh
+    bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group weather_reader1 --members
+    ```
