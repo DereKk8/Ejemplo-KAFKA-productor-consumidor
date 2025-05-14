@@ -30,7 +30,7 @@ def main():
             logging.debug("Got weather: %s", weather)
             producer.produce(
                 topic="weather_data_demo",
-                key="London",
+                key="Bogota",
                 value=json.dumps(weather),
             )
             logging.info("Produced. Sleeping...")
