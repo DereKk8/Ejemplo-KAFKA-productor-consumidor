@@ -6,7 +6,7 @@ def main():
     app = Application(
         broker_address="localhost:9092",
         loglevel="DEBUG",
-        consumer_group="weather_reader1",
+        consumer_group="weather_reader2",
         auto_offset_reset="earliest",
     )
 
