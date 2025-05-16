@@ -8,11 +8,13 @@ from quixstreams import Application
 def get_weather():
     response = requests.get(
         "https://api.open-meteo.com/v1/forecast",
-        params={
-            "latitude": 51.5,
-            "longitude": -0.11,
-            "current": "temperature_2m",
-        },
+        params = {
+            "latitude": 4.6097,
+            "longitude": -74.0817,
+            "start_date": "2025-05-15",
+            "end_date": "2025-05-15",
+            "hourly": "temperature_2m"
+        }
     )
 
     return response.json()
